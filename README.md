@@ -223,14 +223,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Unsplash** for placeholder images
 - **Heroicons** for beautiful SVG icons
 
-## 📞 Support
-
-If you have any questions or need help:
-
-- **Create an issue** on GitHub
-- **Email us** at support@belezalivre.com
-- **Join our community** on Discord
-
 ---
 
 **Made with ❤️ for beauty enthusiasts everywhere**
