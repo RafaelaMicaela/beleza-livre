@@ -1,15 +1,24 @@
-# Dependencies
+# Dependencies - NUNCA versionar
 node_modules/
+node_modules/*
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
 
 # Build outputs
 dist/
 build/
 *.tsbuildinfo
+.vite/
+.next/
+.nuxt/
+out/
+storybook-static/
 
 # Environment variables
 .env
@@ -17,6 +26,7 @@ build/
 .env.development.local
 .env.test.local
 .env.production.local
+.env.*
 
 # IDE and Editor files
 .vscode/
@@ -24,6 +34,8 @@ build/
 *.swp
 *.swo
 *~
+*.sublime-project
+*.sublime-workspace
 
 # OS generated files
 .DS_Store
@@ -33,13 +45,18 @@ build/
 .Trashes
 ehthumbs.db
 Thumbs.db
+desktop.ini
 
 # Logs
-logs
+logs/
 *.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
 
 # Runtime data
-pids
+pids/
 *.pid
 *.seed
 *.pid.lock
@@ -47,20 +64,15 @@ pids
 # Coverage directory used by tools like istanbul
 coverage/
 *.lcov
-
-# nyc test coverage
-.nyc_output
+.nyc_output/
 
 # Dependency directories
 jspm_packages/
+bower_components/
 
 # Optional npm cache directory
 .npm
-
-# Optional eslint cache
 .eslintcache
-
-# Optional stylelint cache
 .stylelintcache
 
 # Microbundle cache
@@ -78,33 +90,16 @@ jspm_packages/
 # Yarn Integrity file
 .yarn-integrity
 
-# parcel-bundler cache (https://parceljs.org/)
-.cache
-.parcel-cache
-
-# Next.js build output
-.next
-
-# Nuxt.js build / generate output
-.nuxt
-dist
-
-# Gatsby files
+# parcel-bundler cache
 .cache/
-public
-
-# Storybook build outputs
-.out
-.storybook-out
+.parcel-cache/
 
 # Temporary folders
 tmp/
 temp/
+.tmp/
 
 # Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
 *.suo
 *.ntvs*
 *.njsproj
@@ -112,10 +107,7 @@ temp/
 *.sw?
 
 # Local Netlify folder
-.netlify
-
-# Vite
-.vite
+.netlify/
 
 # TypeScript
 *.tsbuildinfo
@@ -124,8 +116,8 @@ temp/
 coverage/
 .nyc_output/
 
-# Storybook
-storybook-static/
-
 # Turbo
-.turbo
+.turbo/
+
+# Local development
+.local/
