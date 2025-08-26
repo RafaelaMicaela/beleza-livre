@@ -18,12 +18,6 @@ Beleza Livre is a modern, responsive e-commerce platform built specifically for 
 - **Context API**: React Context for global authentication state
 - **Local Storage**: Session persistence for user experience
 
-### 🎨 **Design System**
-- **Custom Color Palette**: Primary (#A3BFFA), Accent (#D1E7DD), Neutral (#F5F5F5) colors
-- **Typography**: Open Sans font family with consistent sizing
-- **Component Library**: Reusable UI components with Tailwind CSS
-- **Responsive Layout**: Mobile, tablet, and desktop optimized views
-- **Brand Identity**: Lotus logo and consistent visual elements
 
 ### 🔍 **Advanced Features**
 - **Product Reviews**: Customer feedback and 5-star rating system
@@ -50,33 +44,11 @@ Beleza Livre is a modern, responsive e-commerce platform built specifically for 
 
 ```
 beleza-livre/
-├── public/                 # Static assets
 ├── src/
 │   ├── assets/            # Project assets
 │   │   ├── icones/        # SVG icons and logos
-│   │   │   ├── lotus.svg  # Main logo
-│   │   │   ├── cartao.svg # Payment method icons
-│   │   │   ├── preco.svg  # Payment method icons
-│   │   │   ├── bitcoin.svg # Payment method icons
-│   │   │   ├── Selos/     # Product certification seals
-│   │   │   │   └── Selo 2/
-│   │   │   │       ├── vegan.svg
-│   │   │   │       ├── crueldade-animal.svg
-│   │   │   │       └── produto-organico.svg
-│   │   │   └── RedesSociais/ # Social media icons
-│   │   │       ├── instagram.svg
-│   │   │       ├── whatsapp.svg
-│   │   │       └── facebook.svg
 │   │   └── imagens/       # Product images
-│   │       ├── pasta-de-dental.webp
-│   │       ├── Serum-Facial-Esqualano-Bee-Basics.webp
-│   │       ├── Manteiga-de-Cupuacu-Natural-Ekilibre-Amazonia.webp
-│   │       ├── elemento-mineral-agua-floral-de-rosas-120ml.webp
-│   │       ├── Sabonete-Natural-Neutro-sem-Fragrancia-100g-Almanati.webp
-│   │       ├── oleo-vegetal-rosa-mosqueta-by-samia.webp
-│   │       ├── puro-gel-multifuncional-natural-de-aloe-60ml–livealoe.webp
-│   │       └── AloeGel-Base-Sem-Fragrancia-200g---Laszlo.webp
-│   ├── components/         # Reusable UI components
+│   │   ├── components/         # Reusable UI components
 │   │   ├── Header.tsx     # Responsive navigation header with hamburger menu
 │   │   └── Footer.tsx     # Site footer with payment methods and social media
 │   ├── contexts/          # React contexts
