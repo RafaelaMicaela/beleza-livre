@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Open Sans', system-ui, sans-serif;
+  }
+  
+  body {
+    @apply bg-neutral-100 text-neutral-600;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary-400 hover:bg-primary-500 text-secondary-white font-medium py-2 px-4 rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary-400 focus:ring-offset-2;
+  }
+  
+  .btn-secondary {
+    @apply bg-secondary-white hover:bg-neutral-50 text-neutral-600 font-medium py-2 px-4 rounded-lg border border-neutral-300 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary-400 focus:ring-offset-2;
+  }
+  
+  .input-field {
+    @apply w-full px-3 py-2 bg-neutral-100 border border-neutral-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-400 focus:border-transparent transition-all duration-200 text-neutral-600;
+  }
+  
+  .card {
+    @apply bg-secondary-white rounded-xl shadow-sm border border-neutral-200 hover:shadow-md transition-shadow duration-200;
+  }
+  
+  .product-card {
+    @apply card p-4 hover:shadow-lg transition-all duration-200 cursor-pointer;
+  }
+  
+  .nav-bar {
+    @apply bg-accent-200 text-neutral-600;
+  }
+  
+  .nav-link {
+    @apply text-neutral-600 hover:text-neutral-500 transition-colors duration-200;
+  }
+  
+  /* Hide scrollbar for horizontal scroll */
+  .scrollbar-hide {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;  /* Safari and Chrome */
+  }
+  
+  /* Line clamp for product titles */
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
