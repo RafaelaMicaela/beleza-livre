@@ -59,7 +59,7 @@ const Register = () => {
         <div className="flex justify-center">
           <div className="flex items-center space-x-3">
             <img 
-              src="/src/assets/icones/lotus.svg" 
+              src="../public/icones/lotus.svg" 
               alt="Beleza Livre Logo" 
               className="w-12 h-12"
             />

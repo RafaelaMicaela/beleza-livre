@@ -9,7 +9,7 @@ const Footer = () => {
           <div className="col-span-1 md:col-span-1">
             <div className="flex items-center space-x-3 mb-4">
               <img 
-                src="/src/assets/icones/lotus.svg" 
+                src="../public/icones/lotus.svg" 
                 alt="Beleza Livre Logo" 
                 className="w-10 h-10"
               />
@@ -28,21 +28,21 @@ const Footer = () => {
             <div className="flex space-x-3">
               <div className="w-12 h-8 bg-neutral-200 rounded flex items-center justify-center">
                 <img 
-                  src="/src/assets/icones/cartao.svg" 
+                  src="../public/icones/cartao.svg" 
                   alt="Cartão de Crédito" 
                   className="w-6 h-4"
                 />
               </div>
               <div className="w-12 h-8 bg-neutral-200 rounded flex items-center justify-center">
                 <img 
-                  src="/src/assets/icones/preco.svg" 
+                  src="../public/icones/preco.svg" 
                   alt="Código de Barras" 
                   className="w-6 h-4"
                 />
               </div>
               <div className="w-12 h-8 bg-neutral-200 rounded flex items-center justify-center">
                 <img 
-                  src="/src/assets/icones/bitcoin.svg" 
+                  src="../public/icones/bitcoin.svg" 
                   alt="Bitcoin" 
                   className="w-6 h-4"
                 />
@@ -58,21 +58,21 @@ const Footer = () => {
             <div className="flex space-x-3">
               <div className="w-12 h-12 bg-neutral-200 rounded-full flex items-center justify-center">
                 <img 
-                  src="/src/assets/icones/Selos/Selo 2/vegan.svg" 
+                  src="../public/icones/Selos/Selo 2/vegan.svg" 
                   alt="Selo Vegano" 
                   className="w-6 h-6"
                 />
               </div>
               <div className="w-12 h-12 bg-neutral-200 rounded-full flex items-center justify-center">
                 <img 
-                  src="/src/assets/icones/Selos/Selo 2/crueldade-animal.svg" 
+                  src="../public/icones/Selos/Selo 2/crueldade-animal.svg" 
                   alt="Selo Livre de Crueldade Animal" 
                   className="w-6 h-6"
                 />
               </div>
               <div className="w-12 h-12 bg-neutral-200 rounded-full flex items-center justify-center">
                 <img 
-                  src="/src/assets/icones/Selos/Selo 2/produto-organico.svg" 
+                    src="../public/icones/Selos/Selo 2/produto-organico.svg" 
                   alt="Selo Produto Orgânico" 
                   className="w-6 h-6"
                 />
@@ -90,7 +90,7 @@ const Footer = () => {
               <a href="#" className="text-neutral-500 hover:text-neutral-600 transition-colors duration-200">
                 <span className="sr-only">Instagram</span>
                 <img 
-                  src="/src/assets/icones/RedesSociais/instagram.svg" 
+                  src="../public/icones/RedesSociais/instagram.svg" 
                   alt="Instagram" 
                   className="h-6 w-6"
                 />
@@ -98,7 +98,7 @@ const Footer = () => {
               <a href="#" className="text-neutral-500 hover:text-neutral-600 transition-colors duration-200">
                 <span className="sr-only">WhatsApp</span>
                 <img 
-                  src="/src/assets/icones/RedesSociais/whatsapp.svg" 
+                  src="../public/icones/RedesSociais/whatsapp.svg" 
                   alt="WhatsApp" 
                   className="h-6 w-6"
                 />
@@ -106,7 +106,7 @@ const Footer = () => {
               <a href="#" className="text-neutral-500 hover:text-neutral-600 transition-colors duration-200">
                 <span className="sr-only">Facebook</span>
                 <img 
-                  src="/src/assets/icones/RedesSociais/facebook.svg" 
+                  src="../public/icones/RedesSociais/facebook.svg" 
                   alt="Facebook" 
                   className="h-6 w-6"
                 />

@@ -20,7 +20,7 @@ const Header = () => {
             <div className="flex items-center">
               <Link to="/" className="flex items-center space-x-3">
                 <img 
-                  src="/src/assets/icones/lotus.svg" 
+                  src="../public/icones/lotus.svg" 
                   alt="Beleza Livre Logo" 
                   className="w-10 h-10"
                 />

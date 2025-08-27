@@ -6,28 +6,28 @@ const Home = () => {
       id: 1,
       name: 'Pasta dental menta e malaleuca sem Flúor - 90g',
       price: 10.90,
-      image: '/src/assets/imagens/pasta-de-dental.webp',
+      image: '../public/imagens/pasta-de-dental.webp',
       category: 'Cuidado Pessoal'
     },
     {
       id: 2,
       name: 'Serum Facil Esqualano - 30ml',
       price: 73.90,
-      image: '/src/assets/imagens/Serum-Facial-Esqualano-Bee-Basics.webp',
+      image: '../public/imagens/Serum-Facial-Esqualano-Bee-Basics.webp',
       category: 'Skincare'
     },
     {
       id: 3,
       name: 'Manteiga de Cupuaçu - 30g',
       price: 51.90,
-      image: '/src/assets/imagens/Manteiga-de-Cupuacu-Natural-Ekilibre-Amazonia.webp',
+      image: '../public/imagens/Manteiga-de-Cupuacu-Natural-Ekilibre-Amazonia.webp',
       category: 'Skincare'
     },
     {
       id: 4,
       name: 'Água Floral de Rosas Bruma Facial - 120ml',
       price: 36.90,
-      image: '/src/assets/imagens/elemento-mineral-agua-floral-de-rosas-120ml.webp',
+      image: '../public/imagens/elemento-mineral-agua-floral-de-rosas-120ml.webp',
       category: 'Skincare'
     }
   ]
@@ -37,28 +37,28 @@ const Home = () => {
       id: 5,
       name: 'Sabonete Natural Neutro sem fragrância - 100g',
       price: 28.90,
-      image: '/src/assets/imagens/Sabonete-Natural-Neutro-sem-Fragrancia-100g-Almanati.webp',
+      image: '../public/imagens/Sabonete-Natural-Neutro-sem-Fragrancia-100g-Almanati.webp',
       category: 'Cuidado Pessoal'
     },
     {
       id: 6,
       name: 'Oleo de Rosa Mosqueta - 30ml',
       price: 71.90,
-      image: '/src/assets/imagens/oleo-vegetal-rosa-mosqueta-by-samia.webp',
+      image: '../public/imagens/oleo-vegetal-rosa-mosqueta-by-samia.webp',
       category: 'Skincare'
     },
     {
       id: 7,
       name: 'Puro Gel Multifuncional Natural de Aloe - 60ml',
       price: 15.90,
-      image: '/src/assets/imagens/puro-gel-multifuncional-natural-de-aloe-60ml–livealoe.webp',
+      image: '../public/imagens/puro-gel-multifuncional-natural-de-aloe-60ml–livealoe.webp',
       category: 'Skincare'
     },
     {
       id: 8,
       name: 'AloeGel Base Sem Fragrância - 200g',
       price: 67.90,
-      image: '/src/assets/imagens/AloeGel-Base-Sem-Fragrancia-200g---Laszlo.webp',
+      image: '../public/imagens/AloeGel-Base-Sem-Fragrancia-200g---Laszlo.webp',
       category: 'Skincare'
     }
   ]
