@@ -292,40 +292,42 @@ const ProductList = () => {
               <Link
                 key={product.id}
                 to={`/products/${product.id}`}
-                className="product-card group"
+                className="product-card group flex flex-col h-full"
               >
-                <div className="aspect-square bg-neutral-200 rounded-lg mb-4 overflow-hidden">
-                  <img
-                    src={product.image}
-                    alt={product.name}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-200"
-                  />
-                </div>
-                
-                <div className="mb-2">
-                  <span className="text-xs font-medium text-neutral-600 bg-[#BCF4CC] px-2 py-1 rounded-full">
-                    {categories.find(cat => cat.id === product.category)?.name || product.category}
-                  </span>
-                </div>
-                
-                <h3 className="font-medium text-neutral-600 mb-2 group-hover:text-primary-400 transition-colors duration-200 text-sm leading-tight">
-                  {product.name}
-                </h3>
-                
-                <div className="flex items-center mb-2">
-                  <div className="flex items-center">
-                    {renderStars(product.rating)}
+                <div className="flex flex-col flex-1">
+                  <div className="aspect-square bg-neutral-200 rounded-lg mb-4 overflow-hidden">
+                    <img
+                      src={product.image}
+                      alt={product.name}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-200"
+                    />
                   </div>
-                  <span className="ml-2 text-sm text-neutral-500">
-                    ({product.reviewCount})
-                  </span>
+                  
+                  <div className="mb-2">
+                    <span className="text-xs font-medium text-neutral-600 bg-[#BCF4CC] px-2 py-1 rounded-full">
+                      {categories.find(cat => cat.id === product.category)?.name || product.category}
+                    </span>
+                  </div>
+                  
+                  <h3 className="font-medium text-neutral-600 mb-2 group-hover:text-primary-400 transition-colors duration-200 text-sm leading-tight flex-1">
+                    {product.name}
+                  </h3>
+                  
+                  <div className="flex items-center mb-2">
+                    <div className="flex items-center">
+                      {renderStars(product.rating)}
+                    </div>
+                    <span className="ml-2 text-sm text-neutral-500">
+                      ({product.reviewCount})
+                    </span>
+                  </div>
+                  
+                  <p className="text-lg font-semibold text-neutral-600 mb-3">Por: R$ {product.price.toFixed(2)}</p>
+                  
+                  <button className="w-full bg-[#89AC55] hover:bg-[#7A9B4A] text-secondary-white font-medium py-2 px-4 rounded-lg transition-colors duration-200 text-center mt-auto">
+                    Visualizar
+                  </button>
                 </div>
-                
-                <p className="text-lg font-semibold text-neutral-600 mb-3">Por: R$ {product.price.toFixed(2)}</p>
-                
-                <button className="w-full bg-[#89AC55] hover:bg-[#7A9B4A] text-secondary-white font-medium py-2 px-4 rounded-lg transition-colors duration-200 text-center">
-                  Visualizar
-                </button>
               </Link>
             ))}
           </div>

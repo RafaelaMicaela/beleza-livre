@@ -77,8 +77,8 @@ const Home = () => {
             {/* Mobile: Grid vertical */}
             <div className="grid grid-cols-1 gap-6 md:hidden">
               {bestSellers.map((product) => (
-                <div key={product.id} className="bg-secondary-white rounded-lg border border-neutral-200 shadow-sm hover:shadow-md transition-shadow duration-200">
-                  <div className="p-4">
+                <div key={product.id} className="bg-secondary-white rounded-lg border border-neutral-200 shadow-sm hover:shadow-md transition-shadow duration-200 flex flex-col h-full">
+                  <div className="p-4 flex flex-col flex-1">
                     <div className="aspect-square bg-neutral-200 rounded-lg mb-4 overflow-hidden">
                       <img
                         src={product.image}
@@ -93,7 +93,7 @@ const Home = () => {
                       </span>
                     </div>
                     
-                    <h3 className="font-medium text-neutral-600 mb-3 text-sm leading-tight line-clamp-2">
+                    <h3 className="font-medium text-neutral-600 mb-3 text-sm leading-tight line-clamp-2 flex-1">
                       {product.name}
                     </h3>
                     
@@ -101,7 +101,7 @@ const Home = () => {
                     
                     <Link 
                       to={`/products/${product.id}`} 
-                      className="w-full bg-[#89AC55] hover:bg-[#7A9B4A] text-secondary-white font-medium py-2 px-4 rounded-lg transition-colors duration-200 text-center block"
+                      className="w-full bg-[#89AC55] hover:bg-[#7A9B4A] text-secondary-white font-medium py-2 px-4 rounded-lg transition-colors duration-200 text-center block mt-auto"
                     >
                       Visualizar
                     </Link>
@@ -110,11 +110,11 @@ const Home = () => {
               ))}
             </div>
             
-            {/* Desktop/Tablet: Scroll horizontal */}
-            <div className="hidden md:flex space-x-6 overflow-x-auto pb-4 scrollbar-hide">
+            {/* Desktop/Tablet: Grid responsivo */}
+            <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               {bestSellers.map((product) => (
-                <div key={product.id} className="flex-shrink-0 w-80 bg-secondary-white rounded-lg border border-neutral-200 shadow-sm hover:shadow-md transition-shadow duration-200">
-                  <div className="p-4">
+                <div key={product.id} className="bg-secondary-white rounded-lg border border-neutral-200 shadow-sm hover:shadow-md transition-shadow duration-200 flex flex-col h-full">
+                  <div className="p-4 flex flex-col flex-1">
                     <div className="aspect-square bg-neutral-200 rounded-lg mb-4 overflow-hidden">
                       <img
                         src={product.image}
@@ -129,7 +129,7 @@ const Home = () => {
                       </span>
                     </div>
                     
-                    <h3 className="font-medium text-neutral-600 mb-3 text-sm leading-tight line-clamp-2">
+                    <h3 className="font-medium text-neutral-600 mb-3 text-sm leading-tight line-clamp-2 flex-1">
                       {product.name}
                     </h3>
                     
@@ -137,7 +137,7 @@ const Home = () => {
                     
                     <Link 
                       to={`/products/${product.id}`} 
-                      className="w-full bg-[#89AC55] hover:bg-[#7A9B4A] text-secondary-white font-medium py-2 px-4 rounded-lg transition-colors duration-200 text-center block"
+                      className="w-full bg-[#89AC55] hover:bg-[#7A9B4A] text-secondary-white font-medium py-2 px-4 rounded-lg transition-colors duration-200 text-center block mt-auto"
                     >
                       Visualizar
                     </Link>
@@ -161,8 +161,8 @@ const Home = () => {
             {/* Mobile: Grid vertical */}
             <div className="grid grid-cols-1 gap-6 md:hidden">
               {newArrivals.map((product) => (
-                <div key={product.id} className="bg-secondary-white rounded-lg border border-neutral-200 shadow-sm hover:shadow-md transition-shadow duration-200">
-                  <div className="p-4">
+                <div key={product.id} className="bg-secondary-white rounded-lg border border-neutral-200 shadow-sm hover:shadow-md transition-shadow duration-200 flex flex-col h-full">
+                  <div className="p-4 flex flex-col flex-1">
                     <div className="aspect-square bg-neutral-200 rounded-lg mb-4 overflow-hidden">
                       <img
                         src={product.image}
@@ -177,7 +177,7 @@ const Home = () => {
                       </span>
                     </div>
                     
-                    <h3 className="font-medium text-neutral-600 mb-3 text-sm leading-tight line-clamp-2">
+                    <h3 className="font-medium text-neutral-600 mb-3 text-sm leading-tight line-clamp-2 flex-1">
                       {product.name}
                     </h3>
                     
@@ -185,7 +185,7 @@ const Home = () => {
                     
                     <Link 
                       to={`/products/${product.id}`} 
-                      className="w-full bg-[#89AC55] hover:bg-[#7A9B4A] text-secondary-white font-medium py-2 px-4 rounded-lg transition-colors duration-200 text-center block"
+                      className="w-full bg-[#89AC55] hover:bg-[#7A9B4A] text-secondary-white font-medium py-2 px-4 rounded-lg transition-colors duration-200 text-center block mt-auto"
                     >
                       Comprar
                     </Link>
@@ -194,11 +194,11 @@ const Home = () => {
               ))}
             </div>
             
-            {/* Desktop/Tablet: Scroll horizontal */}
-            <div className="hidden md:flex space-x-6 overflow-x-auto pb-4 scrollbar-hide pr-6">
+            {/* Desktop/Tablet: Grid responsivo */}
+            <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               {newArrivals.map((product) => (
-                <div key={product.id} className="flex-shrink-0 w-80 bg-secondary-white rounded-lg border border-neutral-200 shadow-sm hover:shadow-md transition-shadow duration-200">
-                  <div className="p-4">
+                <div key={product.id} className="bg-secondary-white rounded-lg border border-neutral-200 shadow-sm hover:shadow-md transition-shadow duration-200 flex flex-col h-full">
+                  <div className="p-4 flex flex-col flex-1">
                     <div className="aspect-square bg-neutral-200 rounded-lg mb-4 overflow-hidden">
                       <img
                         src={product.image}
@@ -213,7 +213,7 @@ const Home = () => {
                       </span>
                     </div>
                     
-                    <h3 className="font-medium text-neutral-600 mb-3 text-sm leading-tight line-clamp-2">
+                    <h3 className="font-medium text-neutral-600 mb-3 text-sm leading-tight line-clamp-2 flex-1">
                       {product.name}
                     </h3>
                     
@@ -221,7 +221,7 @@ const Home = () => {
                     
                     <Link 
                       to={`/products/${product.id}`} 
-                      className="w-full bg-[#89AC55] hover:bg-[#7A9B4A] text-secondary-white font-medium py-2 px-4 rounded-lg transition-colors duration-200 text-center block"
+                      className="w-full bg-[#89AC55] hover:bg-[#7A9B4A] text-secondary-white font-medium py-2 px-4 rounded-lg transition-colors duration-200 text-center block mt-auto"
                     >
                       Comprar
                     </Link>

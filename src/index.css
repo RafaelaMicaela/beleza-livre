@@ -51,6 +51,11 @@
     display: none;  /* Safari and Chrome */
   }
   
+  /* Ensure horizontal scroll containers have proper padding */
+  .scroll-container {
+    padding-right: 2rem; /* Ensures last item is fully visible */
+  }
+  
   /* Line clamp for product titles */
   .line-clamp-2 {
     display: -webkit-box;
