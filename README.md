@@ -1,122 +1,63 @@
-# Beleza Livre - Beauty Products E-commerce Platform
+# Beleza Livre
 
-Beleza Livre is a modern, responsive e-commerce platform built specifically for beauty products. The platform features a beautiful user interface, comprehensive product management, and seamless user experience for beauty enthusiasts.
+E-commerce de produtos de beleza natural e premium, desenvolvido com React e TypeScript.
 
-## ✨ Features
+## 🛍️ Sobre o Projeto
 
-### 🛍️ **Product Management**
-- **Product Catalog**: Browse through a curated collection of beauty products
-- **Category Filtering**: Filter products by makeup, skincare, haircare, fragrances, tools, and bath & body
-- **Search Functionality**: Search products by name or description with responsive search bar
-- **Sorting Options**: Sort by name, price (low/high), and rating
-- **Product Details**: Comprehensive product information with multiple images, descriptions, and specifications
-- **Responsive Design**: Mobile-first approach with hamburger menu and adaptive layouts
+Beleza Livre é uma plataforma de e-commerce moderna e responsiva especializada em produtos de beleza. A aplicação oferece uma experiência de usuário intuitiva para navegação, busca e compra de produtos cosméticos.
 
-### 👤 **User Authentication**
-- **User Registration**: Create new accounts with form validation
-- **User Login**: Secure authentication system with session management
-- **Context API**: React Context for global authentication state
-- **Local Storage**: Session persistence for user experience
+### Funcionalidades
 
+- Catálogo de produtos com sistema de busca e filtros
+- Autenticação de usuários (login/registro)
+- Página de detalhes do produto
+- Design responsivo para mobile e desktop
+- Sistema de categorias (Skincare, Cuidado Pessoal, Maquiagem)
 
-### 🔍 **Advanced Features**
-- **Product Reviews**: Customer feedback and 5-star rating system
-- **Testimonials**: Customer testimonial section with navigation
-- **Payment Icons**: Multiple payment method displays
-- **Certification Seals**: Vegan, cruelty-free, and organic product badges
-- **Social Media Integration**: Instagram, WhatsApp, and Facebook links
+## 🚀 Tecnologias
 
-## 🚀 Technologies Used
+- **React** 18 + TypeScript
+- **Vite** - Build tool
+- **Tailwind CSS** - Estilização
+- **React Router DOM** - Navegação
+- **React Context** - Gerenciamento de estado
 
-- **Frontend Framework**: React 18 with TypeScript
-- **Styling**: Tailwind CSS with custom "Beleza Livre Design System"
-- **Build Tool**: Vite for fast development and building
-- **Routing**: React Router DOM for navigation
-- **State Management**: React Context API for authentication
-- **UI Components**: Custom-built components with Tailwind CSS
-- **Icons**: Custom SVG icons and logos (lotus, payment methods, seals)
-- **Fonts**: Open Sans font family via Google Fonts
-- **CSS Processing**: PostCSS with Autoprefixer
-- **Code Quality**: ESLint for code linting
-- **Package Manager**: npm with package-lock.json
+## � Pré-requisitos
 
-## 🏗️ Project Structure
+- Node.js (≥ 18.0.0)
+- npm ou yarn
 
-```
-beleza-livre/
-├── src/
-│   ├── assets/            # Project assets
-│   │   ├── icones/        # SVG icons and logos
-│   │   └── imagens/       # Product images
-│   │   ├── components/         # Reusable UI components
-│   │   ├── Header.tsx     # Responsive navigation header with hamburger menu
-│   │   └── Footer.tsx     # Site footer with payment methods and social media
-│   ├── contexts/          # React contexts
-│   │   └── AuthContext.tsx # Authentication state management
-│   ├── pages/             # Page components
-│   │   ├── Home.tsx       # Landing page with featured products and testimonials
-│   │   ├── Login.tsx      # User login with lotus logo
-│   │   ├── Register.tsx   # User registration with lotus logo
-│   │   ├── ProductList.tsx # Product catalog with search and filtering
-│   │   └── ProductDetail.tsx # Detailed product view with images and reviews
-│   ├── App.tsx            # Main app component with routing
-│   ├── main.tsx           # Application entry point
-│   └── index.css          # Global styles and Tailwind CSS utilities
-├── .gitignore             # Git ignore rules
-├── tailwind.config.js     # Tailwind CSS configuration with custom design system
-├── tsconfig.json          # TypeScript configuration
-├── tsconfig.node.json     # TypeScript configuration for Node.js
-├── vite.config.ts         # Vite build configuration
-├── postcss.config.js      # PostCSS configuration
-├── package.json           # Dependencies and scripts
-└── README.md              # Project documentation
+## 🔧 Instalação e Execução
+
+1. Clone o repositório:
+```bash
+git clone https://github.com/RafaelaMicaela/beleza-livre.git
+cd beleza-livre
 ```
 
-## 🚀 Getting Started
+2. Instale as dependências:
+```bash
+npm install
+```
 
-### Prerequisites
-- **Node.js**: Version 14.x or later
-- **npm** or **yarn**: Package manager
+3. Execute o projeto em modo de desenvolvimento:
+```bash
+npm run dev
+```
 
-### Installation
+4. Abra no navegador: `http://localhost:5173`
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/your-username/beleza-livre.git
-   cd beleza-livre
-   ```
+## 📦 Scripts Disponíveis
 
-2. **Install dependencies**
-   ```bash
-   npm install
-   # or
-   yarn install
-   ```
+- `npm run dev` - Inicia o servidor de desenvolvimento
+- `npm run build` - Gera build de produção
+- `npm run preview` - Visualiza o build de produção
+- `npm run lint` - Executa linting do código
 
-3. **Start development server**
-   ```bash
-   npm run dev
-   # or
-   yarn dev
-   ```
+## 🌐 Deploy
 
-4. **Open your browser**
-   Navigate to `http://localhost:5173` to view the application
-
-### Available Scripts
-
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run preview` - Preview production build
-- `npm run lint` - Run ESLint
-
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+O projeto está disponível em: [beleza-livre.vercel.app](https://beleza-livre.vercel.app)
 
 ---
 
-**Made with ❤️ for beauty enthusiasts everywhere**
-
-*Beleza Livre - Where beauty meets technology*
+Desenvolvido com ❤️ por [Rafaela Micaela](https://github.com/RafaelaMicaela)
